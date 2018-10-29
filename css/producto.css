@@ -1,0 +1,198 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Raleway', sans-serif;
+    margin-left: 20px;
+}
+
+
+/*Con la clase .navBar agregaremos las propiedades para
+  crear la barra de navegacion
+  
+  Esta clase ademas hace que los item del menu se alineen de manera horizontal*/
+
+.navBar {
+    position: fixed;
+    height: 80px;
+    overflow: hidden;
+    top: 0;
+    display: flex;
+    align-items: center;
+    background: #35cafc;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+
+}
+
+.logo {
+    background: url(/images/);
+    background-size: contain;
+    width: 180px;
+    height: 18px;
+    float: left;
+    margin-left: 20px;
+}
+
+.principal {
+    margin-top: 100px;
+}
+
+
+/*
+.menu alinea los itemes del menu a la izquierda
+*/
+
+.menu {
+    position: absolute;
+    right: 20px;
+
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 20px;
+    transition: color 0.3s;
+    font-size: 20px;
+    
+}
+
+/*menu a:hover es para darle un color a los items del menu
+  cuando posicionas el mouse sobre ellos*/
+
+.menu a:hover {
+  color: #91e3ff; 
+}
+
+/*Dentro de la clase header deberia ir el slide*/
+
+.header {
+    width: 100%;
+    height: 600px;
+    background: url(/images/fondo.jpg);
+    background-size: cover;
+}
+
+/*
+   .boton tiene las propiedades del boton responsive de tres lineas 
+*/
+
+.boton {
+    display: none;
+    position: absolute;
+    right: 20px;
+}
+
+.boton:hover > span {
+    background: #91e3ff;
+
+}
+
+.boton span {
+    display: block;
+    margin: 6px;
+    width: 40px;
+    height: 3px;
+    background: #fff;
+}
+
+p {
+    padding: 20px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+/*
+    Desde vienen las propiedades responsive
+*/
+
+@media only screen and (max-width : 600px) {
+    .navBar {
+        overflow: visible;
+    }
+
+    /*.menu tiene las propiedades para esconder los items de menu en responsive 
+      y que se vea solo el boton, con max-height: 0*/
+
+    .menu {
+        width: 100%;
+        right: 0;
+        top: 80px;
+        background: #35cafc;
+        overflow: hidden;
+        max-height: 0;   
+    }
+
+    .menu a {
+        display: block;
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+
+    }
+
+
+    .boton {
+        display: block;
+        cursor: pointer;
+
+
+    }
+
+    .show {
+        max-height: 500px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

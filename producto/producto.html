@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Geek Store Productos </title>
+    <link rel="stylesheet" href="/css/producto.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+    <link rel="icon" href="/images/fav.png" type="image/x-icon">
+</head>
+<body>
+    <div class="navBar">
+        <div class="logo">
+
+        </div>
+        <a class="boton" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <div class="menu">
+            <a href="/index.html">Home</a>
+            <a href="/producto/producto.html">Productos</a>
+            <a href="/carrito/carrito.html">Carrito<i class="fas fa-shopping-cart"></i></a>
+            <a href="/login/login.html">Login <i class="fas fa-user"></i></a>
+        </div>
+    </div>
+    <div class="principal">
+        <h1>Productos</h1>
+    </div>
+    
+
+    <script type="text/javascript">
+
+        $(".boton").on("click",function(){
+            $('.menu').toggleClass("show");
+        });
+
+    
+    
+    </script>
+    
+</body>
+</html>
